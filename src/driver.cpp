@@ -1,6 +1,10 @@
-#include <iostream>
+// #include <iostream>
+#include "logger.h"
 
 int main(int argc, char* argv[]) {
-  std::cout << "Hello World!";
+  Logger logger;
+
+
+
   return 0;
 }

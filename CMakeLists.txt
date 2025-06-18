@@ -16,9 +16,8 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES
         src/driver.cpp
-        #mainwindow.cpp
-        #mainwindow.h
-        #mainwindow.ui
+        src/logger.h
+        src/logger.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
