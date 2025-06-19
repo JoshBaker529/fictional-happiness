@@ -26,16 +26,16 @@ enum LogType {
 };
 
 class Logger {
-  public:
-    Logger();
-    ~Logger();
-    void log(LogType, string);
+public:
+  Logger();
+  ~Logger();
+  void log(LogType, string);
 
-  private:
-    path file;
-    ofstream outFile;
-    struct tm dateTime;
-    void updateDateTime();
+private:
+  path file;
+  ofstream outFile;
+  struct tm dateTime;
+  void updateDateTime();
 };
 
-#endif //LOGGER 
+#endif // LOGGER
