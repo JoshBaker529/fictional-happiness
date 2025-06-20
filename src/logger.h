@@ -13,7 +13,7 @@
 #include <string>
 using std::string;
 #include <filesystem>
-using std::filesystem::path;
+using std::filesystem::path, std::filesystem::current_path;
 #include <fstream>
 using std::ofstream;
 #include <ctime>

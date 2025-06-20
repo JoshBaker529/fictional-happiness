@@ -15,10 +15,11 @@ using std::string, std::to_string;
 Logger::Logger() {
   updateDateTime();
   // TODO: Need to make this look in local dir logs/
-  string file_s = "logs-" + to_string(dateTime.tm_year) + "-" +
+
+  string file_s = "logs/" + to_string(dateTime.tm_year) + "-" +
                   to_string(dateTime.tm_mon) + "-" +
                   to_string(dateTime.tm_mday) + ".log";
-  file = path(file_s);
+  file = current_path().append(file_s);
   outFile.open(file, std::ios::app);
 
   outFile << "Logging started.";
