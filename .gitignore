@@ -33,3 +33,6 @@
 
 # Build folder
 build/
+
+# Cashe folder from CMake
+.cache/
