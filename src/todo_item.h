@@ -16,6 +16,11 @@ using std::string;
 
 struct dateTime {
   short year, month, day, hour, minute;
+
+  bool operator<(const dateTime &r) {
+    return std::tie(year, month, day, hour, minute) <
+           std::tie(r.year, r.month, r.day, r.hour, r.minute);
+  }
 };
 
 class Todo_Item {
